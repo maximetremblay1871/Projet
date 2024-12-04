@@ -488,30 +488,16 @@ background-image: linear-gradient(to top, lightgrey, grey);
     border: 1px solid black;
     padding: 4px;
   }
-  @media (max-width: 480px) {
-    #header {
-        height: 15vh;
-        font-size: small;
-    }
-
-    #conteneurNav {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "titre"
-            "nav1"
-            "nav2";
-    }
-
-    #conteneurMain {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "article"
-            "aside";
-    }
-
-    #nav1 a,
-    #nav2 a {
-        font-size: small;
-        padding: 10px;
-    }
+  @media screen and (max-width: 480px) {
+#conteneur {
+    max-width: 480px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto;
+    grid-template-areas:
+        "header header "
+        "main main"
+        "footer footer";
 }
+  }
