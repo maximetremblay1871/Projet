@@ -521,7 +521,6 @@ a:hover {
 }
 
 .imageSource img {
-    width: 1fr;
     height: 250px;
     padding: 4px;
 }
