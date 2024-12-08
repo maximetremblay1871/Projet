@@ -568,7 +568,7 @@ a:hover {
     }
     #conteneurProfessions {
         grid-area: main;
-        max-width: 800x;
+        max-width: 800px;
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: repeat(5, 1fr);
