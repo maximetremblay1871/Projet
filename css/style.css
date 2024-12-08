@@ -546,4 +546,63 @@ a:hover {
             "main main"
             "footer footer";
     }
+    #conteneurSource {
+        grid-area: main;
+        max-width: 480px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(12, 1fr);
+    }
+    #conteneurSujet {
+        grid-area: main;
+        display: grid;
+        max-width: 480px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "articleS asideS"
+            "articleS  asideS"
+            "articleS  asideS";
+        font-size: small;
+        text-align: justify;
+    }
+    #conteneurProfessions {
+        grid-area: main;
+        max-width: 480px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: repeat(5, 1fr);
+    }
+    #conteneurNav {
+        display: grid;
+        max-width: 480px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "nav1 titre nav2";
+    }
+    #conteneurMain {
+        grid-area: main;
+    
+        max-height: 480px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "article aside"
+            "article  aside"
+            "article  aside";
+        background-color: aquamarine;
+    }
+    #conteneurAgenda {
+
+        grid-area: article;
+        max-width: 480px;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 1fr 2fr 2fr 2fr;
+        border-bottom: black solid 1px;
+    
+    }
 }
